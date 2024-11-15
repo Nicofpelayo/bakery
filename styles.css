@@ -25,11 +25,6 @@ object-fit: cover;
 z-index: -1; 
 }
 
-#logo{
-    width: 200px;
-    height: 100px;
-}
-
 header{
     position: relative;
     z-index: 1; 
@@ -72,15 +67,12 @@ nav{
     justify-content: space-between;
     background-color: #a8dadc;
     align-items: center;
-    padding: 10px 60px;
 }
 
 .navigator{
     display: flex;
     justify-content: space-between;
     list-style: none;
-    gap: 20px;
-    font-size: 20px;
 }
 
 
@@ -191,30 +183,44 @@ input, textarea, label{
 
     #mensaje {    width: 300px;}
     #nombre, #email {    width: 150px;}
+    #logo {    width: 100px; height: 50px;}
+    .navigator{font-size: 12px; gap: 8px;}
+    nav{padding: 10px 20px;}
 }
 @media only screen and (min-width: 600px) {
 
     #mensaje {    width: 400px;}
     #nombre, #email {    width: 200px;}
+    #logo {    width: 120px; height: 60px;}
+    .navigator{font-size: 16px; gap: 12px;}
+    nav{padding: 10px 30px;}
 }
 
 @media only screen and (min-width: 768px) {
 
     #mensaje {    width: 600px;}
     #nombre, #email {    width: 300px;}
+    #logo {    width: 150px; height: 75px;}
+    .navigator{font-size: 20px; gap: 16px;}
+    nav{padding: 10px 40px;}
 }
 
 @media only screen and (min-width: 992px) {
 
     #mensaje {    width: 800px;}
     #nombre, #email {    width: 400px;}
-        
+    #logo {    width: 180px; height: 90px;}
+    .navigator{font-size: 25px; gap: 20px;}
+    nav{padding: 10px 50px;}
 }
 
 @media only screen and (min-width: 1200px) {
 
     #mensaje {    width: 1000px;}
     #nombre, #email {    width: 500px;}
+    #logo {    width: 200px; height: 100px;}
+    .navigator{font-size: 25px; gap: 20px;}
+    nav{padding: 10px 60px;}
         
 }
 
