@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="./index.html"><img id="logo" src="./imagenes/logo.png"></a>
+        <ul class="navigator">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./placeholder.html">Nosotros</a></li>
+            <li><a href="./placeholder.html">Tortas</a></li>
+            <li><a href="./placeholder.html">Opiniones</a></li>
+            <li><a href="./placeholder.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <header>
+        <video autoplay muted loop id="background-video" src="./videos/tortas.mp4"></video>
+        <h1>Tortas Pelayo</h1>
+    </header>
+    <main>
+        <section id="productos">
+            <h2>Productos</h2>
+            <div class="product-card-list">
+                <div class="product-card">
+                    <h3 class="product-title"><a href="./placeholder.html">Carrot Cake</a></h3><img src="./imagenes/carrotCake.jpg"></div>
+                <div class="product-card">
+                    <h3 class="product-title"><a href="./placeholder.html">Cheese Cake</a></h3><img src="./imagenes/cheesecake.jpg""></div>
+                <div class="product-card">
+                    <h3 class="product-title"><a href="./placeholder.html">Torta de Chocolate</a></h3><img src="./imagenes/chocolateCake.jpg""> </div>
+                <div class="product-card">
+                    <h3 class="product-title"><a href="./placeholder.html">Chocotorta</a></h3><img src="./imagenes/chocotorta.jpeg""> </div>
+                <div class="product-card">
+                    <h3 class="product-title"><a href="./placeholder.html">Torta de Corazon</a></h3><img src="./imagenes/heartCake.jpg""> </div>
+                <div class="product-card">
+                    <h3 class="product-title"><a href="./placeholder.html">Lemon Pie</a></h3><img src="./imagenes/lemonPie.jpg""> </div>
+                <div class="product-card">
+                    <h3 class="product-title"><a href="./placeholder.html">Mousse</a></h3><img src="./imagenes/mousse.jpg""> </div>
+                <div class="product-card">
+                    <h3 class="product-title"><a href="./placeholder.html">Red Velvet</a></h3><img src="./imagenes/redVelvet.jpg""> </div>
+            </div>
+        </section>
+        <section id="review">
+
+            <h2>Reseñas</h2>
+            <ul class="review-list">
+                <li class="review-text"><h3><a href="./placeholder.html">Red Velvet</a></h3> <p>¡Una delicia! La torta Red Velvet de Pelayo Tortas tiene el equilibrio perfecto entre lo dulce y lo suave. La textura es esponjosa y el sabor, sutil pero delicioso, con ese toque único del queso crema en la cobertura. La presentación también es impecable. Definitivamente una de mis favoritas para ocasiones especiales.</p></li>
+                <li class="review-text"><h3><a href="./placeholder.html">Chocotorta</a></h3> <p>L¡Increíble! La Chocotorta de Pelayo Tortas es simplemente espectacular. La combinación de galletas de chocolate con la crema suave es perfecta. No está ni demasiado dulce ni demasiado suave, el equilibrio es perfecto. Además, la presentación es muy bonita, con un toque casero que me encanta. Ideal para cualquier reunión.</p></li>
+                <li class="review-text"><h3><a href="./placeholder.html">Lemon Pie</a></h3> <p>¡Qué frescura! La Lemon Pie de Pelayo Tortas es el postre perfecto para los días calurosos. La crema de limón tiene un sabor intenso pero refrescante, y la base de galleta está crocante y deliciosa. Me sorprendió lo bien equilibrado que está, ni muy ácido ni empalagoso. La recomiendo mucho.</p></li>
+                <li class="review-text"><h3><a href="./placeholder.html">Carrot Cake</a></h3> <p>Una torta deliciosa y diferente. La Carrot Cake de Pelayo Tortas tiene un sabor único, con zanahoria perfectamente combinada con especias. La textura es húmeda y suave, y el toque de queso crema en el frosting le da un sabor inconfundible. Perfecta para los que buscan algo menos dulce pero lleno de sabor. ¡Excelente elección!</p></li>
+            </ul>
+        </section>
+        <section id="contacto">
+            <h2>Contactanos</h2>
+            <form action="Link" method="POST" target="_blank">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" maxlength="50" required>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" required>
+                    <label for="mensaje">Escribinos: </label>
+                    <textarea type="text" id="mensaje" rows="5" >Escribinos</textarea>
+                    <input id="form-submit" type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li class="footer-info">Copyright</li>
+            <li class="footer-info">contacto@gmail.com</li>
+        </ul>
+    </footer>
+</body>
+</html>
