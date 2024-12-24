@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
     <nav>
-        <a href="/"><img id="logo" src="./imagenes/logo.png"></a>
+        <a href="#logo"><img id="logo" src="./imagenes/logo.png"></a>
         <ul class="navigator">
-            <li><a href="/">Inicio</a></li>
+            <li><a href="#logo">Inicio</a></li>
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#productos">Tortas</a></li>
             <li><a href="#review">Opiniones</a></li>
@@ -30,24 +31,24 @@
             <div class="product-card-list">
                 <div class="product-card">
                     <h3 class="product-title"><a href="./placeholder.html">Carrot Cake</a></h3><img src="./imagenes/carrotCake.jpg"></div>
-                <div class="product-card">
+                    <div class="product-card">
                     <h3 class="product-title"><a href="./placeholder.html">Cheese Cake</a></h3><img src="./imagenes/cheesecake.jpg""></div>
                 <div class="product-card">
                     <h3 class="product-title"><a href="./placeholder.html">Torta de Chocolate</a></h3><img src="./imagenes/chocolateCake.jpg""> </div>
                 <div class="product-card">
                     <h3 class="product-title"><a href="./placeholder.html">Chocotorta</a></h3><img src="./imagenes/chocotorta.jpeg""> </div>
-                <div class="product-card">
-                    <h3 class="product-title"><a href="./placeholder.html">Torta de Corazon</a></h3><img src="./imagenes/heartCake.jpg""> </div>
-                <div class="product-card">
-                    <h3 class="product-title"><a href="./placeholder.html">Lemon Pie</a></h3><img src="./imagenes/lemonPie.jpg""> </div>
-                <div class="product-card">
-                    <h3 class="product-title"><a href="./placeholder.html">Mousse</a></h3><img src="./imagenes/mousse.jpg""> </div>
-                <div class="product-card">
-                    <h3 class="product-title"><a href="./placeholder.html">Red Velvet</a></h3><img src="./imagenes/redVelvet.jpg""> </div>
-            </div>
-        </section>
-        <section id="review">
-
+                    <div class="product-card">
+                        <h3 class="product-title"><a href="./placeholder.html">Torta de Corazon</a></h3><img src="./imagenes/heartCake.jpg""> </div>
+                        <div class="product-card">
+                            <h3 class="product-title"><a href="./placeholder.html">Lemon Pie</a></h3><img src="./imagenes/lemonPie.jpg""> </div>
+                            <div class="product-card">
+                                <h3 class="product-title"><a href="./placeholder.html">Mousse</a></h3><img src="./imagenes/mousse.jpg""> </div>
+                                <div class="product-card">
+                                    <h3 class="product-title"><a href="./placeholder.html">Red Velvet</a></h3><img src="./imagenes/redVelvet.jpg""> </div>
+                                </div>
+                            </section>
+                            <section id="review">
+                                
             <h2>Reseñas</h2>
             <ul class="review-list">
                 <li class="review-text"><h3><a href="./placeholder.html">Red Velvet</a></h3> <p>¡Una delicia! La torta Red Velvet de Pelayo Tortas tiene el equilibrio perfecto entre lo dulce y lo suave. La textura es esponjosa y el sabor, sutil pero delicioso, con ese toque único del queso crema en la cobertura. La presentación también es impecable. Definitivamente una de mis favoritas para ocasiones especiales.</p></li>
@@ -59,21 +60,29 @@
         <section id="contacto">
             <h2>Contactanos</h2>
             <form action="https://formspree.io/f/xgveybey" method="POST">
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" id="nombre" name="nombre" maxlength="50" required>
-                    <label for="email">Email: </label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="mensaje">Escribinos: </label>
-                    <textarea id="mensaje" name="mensaje" rows="5" >Escribinos</textarea>
-                    <input id="form-submit" type="submit" value="Enviar">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" maxlength="50" required>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Escribinos: </label>
+                <textarea id="mensaje" name="mensaje" rows="5" >Escribinos</textarea>
+                <input id="form-submit" type="submit" value="Enviar">
             </form>
         </section>
     </main>
+    <aside id="shopping-cart">
+        <h2>Tu Compra</h2>
+        <ul id="cart-items"></ul>
+        <button onclick="clearCart()" id="clear-cart"></button>
+    </aside>
+    
+      <button id="open-cart" onclick="toggleCart()"></button>
     <footer>
         <ul>
             <li class="footer-info">Copyright</li>
             <li class="footer-info">nifernandezpe@gmail.com</li>
         </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
